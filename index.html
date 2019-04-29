@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <style>
+        #descs tr:hover {
+            cursor: pointer;
+        }
         .compensate-for-scrollbar {
             margin: auto!important;
         }
@@ -66,56 +69,136 @@
                             <th class="bg-light" colspan="2" scope="rowgroup">Heurísticas <small class="text-muted">Nielsen (1993)</small></th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody id="descs">
+                        <tr data-toggle="collapse" data-target="#desc1" aria-expanded="false" aria-controls="desc1" role="button">
                             <td>1</td>
                             <td>Visibilidade do status do sistema</td>
-                            <!-- <td>O sistema deve sempre manter os usuários informados sobre o que está acontecendo, através de feedback apropriado dentro de um prazo razoável</td> -->
                         </tr>
                         <tr>
+                            <td colspan="2" class="p-0">
+                                <div id="desc1" class="collapse" data-parent="#descs">
+                                    <div class="pt-3 pb-3 pl-3 bg-light">
+                                        O sistema deve sempre manter os usuários informados sobre o que está acontecendo, através de feedback apropriado dentro de um prazo razoável
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr data-toggle="collapse" data-target="#desc2" aria-expanded="false" aria-controls="desc2" role="button">
                             <td>2</td>
                             <td>Compatibilidade entre o sistema e o mundo real</td>
-                            <!-- <td>O sistema deve falar a linguagem dos usuários, com palavras, frases e conceitos familiares ao usuário, em vez de termos orientados pelo sistema. Siga as convenções do mundo real, fazendo as informações aparecerem em uma ordem natural e lógica</td> -->
                         </tr>
                         <tr>
+                            <td colspan="2" class="p-0">
+                                <div id="desc2" class="collapse" data-parent="#descs">
+                                    <div class="pt-3 pb-3 pl-3 bg-light">
+                                            O sistema deve falar a linguagem dos usuários, com palavras, frases e conceitos familiares ao usuário, em vez de termos orientados pelo sistema. Siga as convenções do mundo real, fazendo as informações aparecerem em uma ordem natural e lógica
+                                    </div>                                    
+                                </div>
+                            </td>
+                        </tr>
+                        <tr data-toggle="collapse" data-target="#desc3" aria-expanded="false" aria-controls="desc3" role="button">
                             <td>3</td>
                             <td>Controle e liberdade para o usuário</td>
-                            <!-- <td>Os usuários geralmente escolhem as funções do sistema por engano e precisarão de uma "saída de emergência" claramente marcada para deixar o estado indesejado sem ter que passar por um diálogo extenso. Suporte desfazer e refazer</td> -->
                         </tr>
                         <tr>
+                            <td colspan="2" class="p-0">
+                                <div id="desc3" class="collapse" data-parent="#descs">
+                                    <div class="pt-3 pb-3 pl-3 bg-light">
+                                        Os usuários geralmente escolhem as funções do sistema por engano e precisarão de uma "saída de emergência" claramente marcada para deixar o estado indesejado sem ter que passar por um diálogo extenso. Suporte desfazer e refazer
+                                    </div>                                    
+                                </div>
+                            </td>
+                        </tr>
+                        <tr data-toggle="collapse" data-target="#desc4" aria-expanded="false" aria-controls="desc4" role="button">
                             <td>4</td>
                             <td>Consistência e padrões</td>
-                            <!-- <td>Os usuários não devem se perguntar se palavras, situações ou ações diferentes significam a mesma coisa. Siga as convenções da plataforma</td> -->
                         </tr>
                         <tr>
+                            <td colspan="2" class="p-0">
+                                <div id="desc4" class="collapse" data-parent="#descs">
+                                    <div class="pt-3 pb-3 pl-3 bg-light">
+                                        Os usuários não devem se perguntar se palavras, situações ou ações diferentes significam a mesma coisa. Siga as convenções da plataforma
+                                    </div>                                    
+                                </div>
+                            </td>
+                        </tr>
+                        <tr data-toggle="collapse" data-target="#desc5" aria-expanded="false" aria-controls="desc5" role="button">
                             <td>5</td>
                             <td>Prevenção de erros</td>
-                            <!-- <td>Ainda melhor do que boas mensagens de erro é um projeto cuidadoso que impede que um problema ocorra em primeiro lugar. Elimine as condições propensas a erros ou verifique-as e apresente aos usuários uma opção de confirmação antes de se comprometerem com a ação</td> -->
                         </tr>
                         <tr>
+                            <td colspan="2" class="p-0">
+                                <div id="desc5" class="collapse" data-parent="#descs">
+                                    <div class="pt-3 pb-3 pl-3 bg-light">
+                                        Ainda melhor do que boas mensagens de erro é um projeto cuidadoso que impede que um problema ocorra em primeiro lugar. Elimine as condições propensas a erros ou verifique-as e apresente aos usuários uma opção de confirmação antes de se comprometerem com a ação
+                                    </div>                                    
+                                </div>
+                            </td>
+                        </tr>
+                        <tr data-toggle="collapse" data-target="#desc6" aria-expanded="false" aria-controls="desc6" role="button">
                             <td>6</td>
                             <td>Reconhecimento em vez de memorização</td>
-                            <!-- <td>Minimize a carga de memória do usuário, tornando objetos, ações e opções visíveis. O usuário não deve ter que lembrar informações de uma parte do diálogo para outra. As instruções de uso do sistema devem ser visíveis ou facilmente recuperáveis ​​sempre que apropriado</td> -->
                         </tr>
                         <tr>
+                            <td colspan="2" class="p-0">
+                                <div id="desc6" class="collapse" data-parent="#descs">
+                                    <div class="pt-3 pb-3 pl-3 bg-light">
+                                        Minimize a carga de memória do usuário, tornando objetos, ações e opções visíveis. O usuário não deve ter que lembrar informações de uma parte do diálogo para outra. As instruções de uso do sistema devem ser visíveis ou facilmente recuperáveis ​​sempre que apropriado
+                                    </div>                                    
+                                </div>
+                            </td>
+                        </tr>
+                        <tr data-toggle="collapse" data-target="#desc7" aria-expanded="false" aria-controls="desc7" role="button">
                             <td>7</td>
                             <td>Eficiência e flexibilidade de uso</td>
-                            <!-- <td>Os aceleradores - invisíveis para o usuário novato - podem acelerar a interação do usuário especialista, de modo que o sistema possa atender a usuários inexperientes e experientes. Permitir que os usuários personalizem ações frequentes</td> -->
                         </tr>
                         <tr>
+                            <td colspan="2" class="p-0">
+                                <div id="desc7" class="collapse" data-parent="#descs">
+                                    <div class="pt-3 pb-3 pl-3 bg-light">
+                                        Os aceleradores - invisíveis para o usuário novato - podem acelerar a interação do usuário especialista, de modo que o sistema possa atender a usuários inexperientes e experientes. Permitir que os usuários personalizem ações frequentes
+                                    </div>                                    
+                                </div>
+                            </td>
+                        </tr>
+                        <tr data-toggle="collapse" data-target="#desc8" aria-expanded="false" aria-controls="desc8" role="button">
                             <td>8</td>
                             <td>Design estético e minimalista</td>
-                            <!-- <td>Os diálogos não devem conter informações irrelevantes ou raramente necessárias. Cada unidade extra de informação em um diálogo compete com as unidades relevantes de informação e diminui sua visibilidade relativa</td> -->
                         </tr>
                         <tr>
+                            <td colspan="2" class="p-0">
+                                <div id="desc8" class="collapse" data-parent="#descs">
+                                    <div class="pt-3 pb-3 pl-3 bg-light">
+                                        Os diálogos não devem conter informações irrelevantes ou raramente necessárias. Cada unidade extra de informação em um diálogo compete com as unidades relevantes de informação e diminui sua visibilidade relativa
+                                    </div>                                    
+                                </div>
+                            </td>
+                        </tr>
+                        <tr data-toggle="collapse" data-target="#desc9" aria-expanded="false" aria-controls="desc9" role="button">
                             <td>9</td>
                             <td>Ajude os usuários a reconhecerem, diagnosticarem e recuperarem-se de erros</td>
-                            <!-- <td>Mensagens de erro devem ser expressas em linguagem simples (sem códigos), indicar precisamente o problema e sugerir de forma construtiva uma solução</td> -->
                         </tr>
                         <tr>
+                            <td colspan="2" class="p-0">
+                                <div id="desc9" class="collapse" data-parent="#descs">
+                                    <div class="pt-3 pb-3 pl-3 bg-light">
+                                        Mensagens de erro devem ser expressas em linguagem simples (sem códigos), indicar precisamente o problema e sugerir de forma construtiva uma solução
+                                    </div>                                    
+                                </div>
+                            </td>
+                        </tr>
+                        <tr data-toggle="collapse" data-target="#desc10" aria-expanded="false" aria-controls="desc10" role="button">
                             <td>10</td>
                             <td>Ajuda e documentação</td>
-                            <!-- <td>Mesmo que seja melhor se o sistema puder ser usado sem documentação, pode ser necessário fornecer ajuda e documentação. Qualquer informação desse tipo deve ser fácil de pesquisar, focada na tarefa do usuário, listar as etapas concretas a serem executadas e não ser muito grande</td> -->
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="p-0">
+                                <div id="desc10" class="collapse" data-parent="#descs">
+                                    <div class="pt-3 pb-3 pl-3 bg-light">
+                                        Mesmo que seja melhor se o sistema puder ser usado sem documentação, pode ser necessário fornecer ajuda e documentação. Qualquer informação desse tipo deve ser fácil de pesquisar, focada na tarefa do usuário, listar as etapas concretas a serem executadas e não ser muito grande
+                                    </div>                                    
+                                </div>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
