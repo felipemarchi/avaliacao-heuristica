@@ -25,9 +25,21 @@
 </head>
 <body class="container mt-5 mb-5">
     <h1 class="display-4">Introdução a Interfaces Humano-Computador</h1>
-    <h2><a href="arquivos/especificacao.pdf" target="_blank"><i class="far fa-file-pdf"></i> Trabalho 1 - Avaliação Heurística</a></h2>
+    <h2 class="float-left"><a href="arquivos/especificacao.pdf" target="_blank"><i class="far fa-file-pdf"></i> Trabalho 1 - Avaliação Heurística</a></h2>
+    <div class="dropdown float-right">
+      <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Desenvolvedores
+      </a>
 
-    <div class="card mt-5">
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <span class="dropdown-item disabled">Alfredo Albélis</span>
+        <span class="dropdown-item disabled">Cléofas Peres</span>
+        <span class="dropdown-item disabled">Felipe Marchi</span>
+        <span class="dropdown-item disabled">Jéssica Hay</span>
+      </div>
+    </div>    
+
+    <div class="card mt-5 d-inline-block">
         <div class="card-header">
             <h3>Objetivo</h3>
         </div>
@@ -246,6 +258,7 @@
     </div>
 
     <h3 class="mt-5">Problemas detectados individualmente</h3>
+    <p><b>*</b> A heurística 10 é violada em todo o site pela sua falta de documentação</p>
     <div class="table-responsive">
         <table class="table table-hover">
             <thead>
@@ -253,7 +266,7 @@
                     <th scope="col">Aluno</th>
                     <th scope="col">#</th>
                     <th scope="col">Descrição do Problema</th>
-                    <th class="text-center" scope="col">Heurística violada</th>
+                    <th class="text-center" scope="col">Heurística violada*</th>
                     <th class="text-center" scope="col">Imagem ilustrativa</th>
                 </tr>
             </thead>
@@ -897,11 +910,11 @@
             <tbody>
                 <tr>
                     <th scope="row">1</th>
-                    <td class="text-center"><i class="fas fa-check"></i></td>
+                    <td class="text-center"></td>
                     <td class="text-center"><i class="fas fa-check"></i></td>
                     <td class="text-center"></td>
                     <td class="text-center"></td>
-                    <td class="text-center bg-light">2</td>
+                    <td class="text-center bg-light">1</td>
                 </tr>
                 <tr>
                     <th scope="row">2</th>
@@ -1177,7 +1190,7 @@
                 </tr>
                 <tr class="bg-light">
                     <th scope="row">TOTAL</th>
-                    <td class="text-center">12</td>
+                    <td class="text-center">11</td>
                     <td class="text-center">16</td>
                     <td class="text-center">13</td>
                     <td class="text-center">2</td>
